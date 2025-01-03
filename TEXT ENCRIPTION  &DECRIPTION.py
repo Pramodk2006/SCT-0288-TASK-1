@@ -13,7 +13,7 @@ def encript(st,key):
 def decript(st,key):
     g=""
     for i in st:
-        if i==" "
+        if i==" ":
             g=g+" "
         else:
             if i in letters:
@@ -23,10 +23,10 @@ def decript(st,key):
                 g=g+chr(i)
     print(g)  
 letters='abcdefghijklmnopqrstuvwxyz'
-key=int(input("Enter the shift value"))
+key=int(input("Enter the shift value:"))
 st=input("Enter the string to perform operations.").lower()
 print("encript or decript")
-i=input("e for encript and d for decript")
+i=input("e for encript and d for decript: ")
 if i=='e':
     encript(st,key)
 else:
